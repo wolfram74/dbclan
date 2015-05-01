@@ -37,4 +37,4 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
+# steam API key 81518B88842941FE42E6A5D0E9761B47
