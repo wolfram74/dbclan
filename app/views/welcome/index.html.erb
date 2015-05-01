@@ -1,0 +1,20 @@
+<h1>HOW TO CHANGE YOUR SCREEN NAME</h1>
+  <p>Find me in app/views/welcome/index.html.erb</p>
+<h1>AVAILABLE LOGINS</h1>
+  <ul>
+    <% @logins.each do |login| %>
+      <% if login.available %>
+        <li  class="available"  >
+          username: <%= login.name %> -> password: <%= login.pass %>
+          <br>
+          <%= button_to("Take login", login, method: :get) %>
+        </li>
+      <% else %>
+        <li  class="taken"  >
+          username: <%= login.name %> -> password: <%= login.pass %>
+          <br>
+          <%= button_to("I have logged out", login, method: :put) %>
+        </li>      
+      <% end %>
+    <% end %>
+  </ul>
