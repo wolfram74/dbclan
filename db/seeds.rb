@@ -8,6 +8,15 @@
 
 names = []
 passes = []
+=begin
+#find out steamids of accounts to enable real time updating of login status.
+steamids = [ 
+  "", "", "", "", "",
+  "", "", "", "", "",
+  "", "", "76561198181616674", "", "",
+  "", "", "", "", ""
+]
+=end
 template_n = "boots_on_fire_%02d"
 template_p = "swordfishing"
 20.times do |i|
